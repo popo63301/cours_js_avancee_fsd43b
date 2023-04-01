@@ -732,6 +732,41 @@ const log = {
 setTimeout(log.save, 500);
 ```
 
+---
+
+### Résumé
+
+- this = équivalent de "moi"
+- this propre au contexte (soit objet / soit function) = chacun son "moi"
+- dans le cas d'un objet, fait référence à l'instance et permet d'accèder à d'autres propriétés de cette instance ou à d'autre clé
+- fonction anonyme prend le this parent
+
+---
+
+### Exercice
+
+Créer un objet animal.
+
+Données:
+
+- nom
+- age
+- sound (string)
+
+Methods:
+
+- makeSound() = affiche le sound avec plein de "!!!!"
+- sayHello() = affiche "Hello ! My name is NAME"
+
+Exemple:
+sound = "Roooar"
+name = "riri"
+
+myAnimal.makeSound() // affiche "Roooar !!!!!!!!!!"
+myAnimal.sayHello() // affiche "Hello ! My name is riri"
+
+---
+
 ### L'objet arguments et paramètres d'une fonction <a class="anchor" id="section76"></a>
 
 Vous n'êtes pas obligé de renseigner le nombre d'argument(s) d'une fonction en JS. La fonction possède en interne une propriété **arguments** qui récupère les paramètres de la fonction, attention arguments n'est pas un tableau :
@@ -826,3 +861,11 @@ const School = {
 School.sayHello();
 School.sayHelloArrowFunc();
 ```
+
+---
+
+### Exercice
+
+Implémenter `isEven()` = fonction qui retourne "pair" si pair, et "impair" si impaire
+
+---
