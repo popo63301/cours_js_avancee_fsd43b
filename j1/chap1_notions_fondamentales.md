@@ -749,21 +749,28 @@ Créer un objet animal.
 
 Données:
 
+```
 - nom
 - age
 - sound (string)
+```
 
 Methods:
 
+```
 - makeSound() = affiche le sound avec plein de "!!!!"
 - sayHello() = affiche "Hello ! My name is NAME"
+```
 
 Exemple:
+
+```
 sound = "Roooar"
 name = "riri"
 
 myAnimal.makeSound() // affiche "Roooar !!!!!!!!!!"
 myAnimal.sayHello() // affiche "Hello ! My name is riri"
+```
 
 ---
 
