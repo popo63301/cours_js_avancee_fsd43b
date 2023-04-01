@@ -263,6 +263,19 @@ Vous pouvez enchaîner les ternaires mais, attention à la lisibilité.
 logged = true ? (true ? "toujours yes" : "no") : "no"; // toujours yes
 ```
 
+---
+
+### Exercice
+
+Créer une fonction `mySituation` qui prend en entrée un age et affiche "Vous êtes majeur" si la personne est majeure et "Vous êtes mineur" dans le cas contraire.
+
+```js
+mySituation(25); // "Vous êtes majeur"
+mySituation(10); // "Vous êtes mineur"
+```
+
+---
+
 ## Portée (ou scope en Anglais) des variables en JS <a class="anchor" id="chapter4"></a>
 
 Définition let :
@@ -399,6 +412,32 @@ Si ce code est valide qu'affichera-t-il ?
 for (let j = 0; j < 10; j++) {}
 console.log(j);
 ```
+
+---
+
+### Résumé
+
+- l'intérieur pas capter l'extérieur
+- l'extérieur ne peut pas capter l'intérieur
+
+---
+
+### Exercice
+
+- Créer 2 fonctions: increment + showValue
+- Stocker une variable counter dans le bon scope qui sera partagé par les 2 fonctions
+
+exemple code:
+
+```js
+increment(); // affiche rien
+increment(); // affiche rien
+showValue(); // affichera "2"
+increment(); // affiche rien
+showValue(); // affichera "3"
+```
+
+---
 
 ## Déclaration d'une constante <a class="anchor" id="chapter5"></a>
 
@@ -561,6 +600,18 @@ function baz({ a, b }) {
 baz({ a: 1, b: 2 }); // 1 2
 baz({ b: 2, a: 1 }); // 1 2
 ```
+
+---
+
+### Exercice
+
+Soit la fonction `sayHelloAndAge(user)` qui affiche "Hello NOM_DU_USER, tu as AGE_DU_USER ans".
+
+Soit user = {name: "justin", age: 30}
+
+Ecrivez la fonction en utilisant la syntaxe de décomposition.
+
+---
 
 ### this DANS LE CONTEXTE DE L'APPEL d'une fonction sur un objet <a class="anchor" id="section74"></a>
 
