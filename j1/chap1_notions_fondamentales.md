@@ -417,7 +417,7 @@ console.log(j);
 
 ### Résumé
 
-- l'intérieur pas capter l'extérieur
+- l'intérieur peut capter l'extérieur
 - l'extérieur ne peut pas capter l'intérieur
 
 ---
