@@ -1,10 +1,10 @@
-function isEven(num) {
-  if (num % 2 === 0) {
-    return "pair";
-  }
+// function isEven(num) {
+//   if (num % 2 === 0) {
+//     return "pair";
+//   }
 
-  return "impair";
-}
+//   return "impair";
+// }
 
 const isEven = (num) => (num % 2 == 0 ? "pair" : "impair");
 
