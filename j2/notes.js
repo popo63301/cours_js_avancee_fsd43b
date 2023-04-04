@@ -1,14 +1,17 @@
-/*
+function ttc(price, tva = 0.2) {
+  if (isNaN(parseFloat(price)) || isNaN(parseFloat(tva))) {
+    return "Error number price value";
+  }
 
+  return Math.floor(price * (1 + tva) * 100) / 100;
+}
 
-si curr impair ? curr + acc, sinon acc
+const phones = [
+  { name: "iphone XX", priceHT: 900 },
+  { name: "iphone X", priceHT: 700 },
+  { name: "iphone B", priceHT: 200 },
+];
 
-*/
-
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
-// console.log(3 % 2 != 0);
-
-const result = numbers.reduce((acc, curr) => (curr % 2 ? acc + curr : acc), 0);
+const result = phones.map((e) => ({ ...e, priceTTC: ttc(e.priceHT) }));
 
 console.log(result);
