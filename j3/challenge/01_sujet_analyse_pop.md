@@ -10,7 +10,7 @@ En utilisant les données ci-dessous dans la variable populations.
 
 4. Etudiez les mots de passe de chaque personne, comptez leurs occurences pour chaque lettre distincte.
 
-5. (Facultatif) Sélectionnez les personnes qui ont des mots de passe avec un nombre de lettre très différents, chaque mot de passe fait exactement 9 caractères. Puis, repérez les/le mot(s) de passe qui contiennent/contient un double 00. Y-a-t-il des mots de passe identique ? Si oui précisez le nom des personnes possédant ces mots de passe.
+5. (Facultatif) Sélectionnez les personnes qui ont des mots de passe avec un nombre de lettre très différents (7 charactères différents minimum), chaque mot de passe fait exactement 9 caractères. Puis, repérez les/le mot(s) de passe qui contiennent/contient un double 00. Y-a-t-il des mots de passe identique ? Si oui précisez le nom des personnes possédant ces mots de passe.
 
 ```js
 const populations = [
