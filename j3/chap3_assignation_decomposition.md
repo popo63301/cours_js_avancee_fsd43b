@@ -121,7 +121,7 @@ console.log(name, notes, average);
 
 ### 03 Exercice iterate destructuring
 
-Affichez le nom et le nom de la soeur de chaque étudiant en utilisant une boucle for of dans le littéral students :
+Affichez le nom et le nom de la soeur de chaque étudiant en utilisant un map dans le littéral students :
 
 // Nom : Alan soeur : Sylvie
 
