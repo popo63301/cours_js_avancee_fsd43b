@@ -168,8 +168,6 @@ fs.readFile("./data/dragons.json", { encoding: "utf8" }, (err, data) => {
 });
 ```
 
-1. Changez le code ci-dessus et utilisez une **promesse** pour gérer la récupération des données au format JSON Object dans JS.
-
 2. Quel est le nom du dragon le plus agé ? Faite un script pour répondre à cette question.
 
 3. Quel est le nom du dragon le plus jeune ? Faite un script pour répondre à cette question.
