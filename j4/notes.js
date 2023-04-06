@@ -1,17 +1,15 @@
-const p = (number) =>
-  new Promise((resolve, reject) => {
-    setTimeout(() => {
-      if (isNaN(parseInt(number))) {
-        reject(new Error("not a number ..."));
+const wait = (time) => new Promise((resolve) => setTimeout(resolve, time));
 
-        return;
-      }
-      resolve(number);
-    }, 100);
-  });
+async function run() {
+  console.log("Start");
 
-Promise.all([p(1), p(2), p(3)])
-  .then((numbers) => {
-    console.log(numbers.reduce((acc, curr) => acc + curr));
-  })
-  .catch((err) => console.error(err));
+  await wait(3000);
+
+  console.log("End");
+
+  await wait(2000);
+
+  console.log("end end");
+}
+
+run();
