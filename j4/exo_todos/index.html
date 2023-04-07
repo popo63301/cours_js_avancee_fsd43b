@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="" />
+    <title>Exercice 1 : Nombre de caractères</title>
+    <style>
+      html {
+        font-family: sans-serif;
+      }
+
+      body {
+        width: 50%;
+        max-width: 800px;
+        min-width: 480px;
+        margin: 0 auto;
+      }
+
+      .result {
+        color: white;
+        padding: 3px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Todos</h1>
+    <ul id="todos"></ul>
+    <script>
+      const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+      const main = async () => {
+        const req = await fetch("https://jsonplaceholder.typicode.com/todos");
+        const [todo1, todo2, todo3, ...rest] = await req.json();
+
+        const reqUser = await fetch(
+          "https://jsonplaceholder.typicode.com/users/1"
+        );
+        const user = await reqUser.json();
+
+        document.getElementById(
+          "todos"
+        ).innerHTML += `<li>Title:${todo1.title} / status: ${todo1.completed} / Name: ${user.name}</li>`;
+
+        await sleep(500);
+
+        document.getElementById(
+          "todos"
+        ).innerHTML += `<li>Title:${todo2.title} / status: ${todo2.completed} / Name: ${user.name}</li>`;
+
+        await sleep(500);
+
+        document.getElementById(
+          "todos"
+        ).innerHTML += `<li>Title:${todo3.title} / status: ${todo3.completed} / Name: ${user.name}</li>`;
+      };
+
+      main();
+    </script>
+  </body>
+</html>
